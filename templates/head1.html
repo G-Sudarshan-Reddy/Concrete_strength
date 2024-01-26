@@ -1,0 +1,51 @@
+<html>
+<body>
+    <div class="login">
+        <h1>Concrete Strength Predictor</h1>
+   
+        <form action="{{ url_for('predict_data')}}" method="post">
+            <h1>
+                <legend>Concrete Strength Prediction</legend>
+            </h1>
+            <div class="mb-3">
+                <label class="form-label">Cement</label>
+                <input class="form-control" type="number" name="Cement" placeholder="Enter Cement" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Blast Furnace Slag</label>
+                <input class="form-control" type="number" name="Blast_Furnace_Slag" placeholder="Enter Blast Furnace Slag" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fly Ash</label>
+                <input class="form-control" type="number" name="Fly_Ash" placeholder="Enter Fly Ash" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Water</label>
+                <input class="form-control" type="number" name="Water" placeholder="Enter Water" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Superplasticizer</label>
+                <input class="form-control" type="number" name="Superplasticizer" placeholder="Enter Superplasticizer" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Coarse Aggregate</label>
+                <input class="form-control" type="number" name="Coarse_Aggregate" placeholder="Enter Coarse Aggregate" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fine Aggregate</label>
+                <input class="form-control" type="number" name="Fine_Aggregate" placeholder="Enter Fine Aggregate" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="number" name="Age" placeholder="Enter Age" min="0" required><br>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict Concrete Strength" required />
+            </div>
+        </form>
+        <h2>
+            THE prediction is {{results}}
+        </h2>
+    </div>
+</body>
+</html>

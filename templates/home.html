@@ -1,0 +1,110 @@
+<!-- <html>
+<body>
+    <div class="login">
+       <h1>Concrete Strength Predictor</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Concrete Strength Predicton form</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Cement</label>
+            <input class="form-control" type="number" name="Cement"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">blast_furnace_slag</label>
+            <input class="form-control" type="number" name="blast_furnace_slag"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">fly_ash</label>
+            <input class="form-control" type="number" name="fly_ash"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">water</label>
+            <input class="form-control" type="number" name="water"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">superplasticizer</label>
+            <input class="form-control" type="number" name="superplasticizer"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">coarse_aggregate</label>
+            <input class="form-control" type="number" name="coarse_aggregate"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">superplasticizer</label>
+            <input class="form-control" type="number" name="fine_aggregate"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">age</label>
+            <input class="form-control" type="number" name="age"
+                placeholder="Enter your score" min='0' required><br> />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html> -->
+
+<html>
+<body>
+    <div class="login">
+        <h1>Concrete Strength Predictor</h1>
+
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <h1>
+                <legend>Concrete Strength Prediction form</legend>
+            </h1>
+            <div class="mb-3">
+                <label class="form-label">Cement</label>
+                <input class="form-control" type="number" name="Cement" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Blast Furnace Slag</label>
+                <input class="form-control" type="number" name="blast_furnace_slag" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fly Ash</label>
+                <input class="form-control" type="number" name="fly_ash" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Water</label>
+                <input class="form-control" type="number" name="water" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Superplasticizer</label>
+                <input class="form-control" type="number" name="superplasticizer" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Coarse Aggregate</label>
+                <input class="form-control" type="number" name="coarse_aggregate" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fine Aggregate</label>
+                <input class="form-control" type="number" name="fine_aggregate" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="number" name="age" placeholder="Enter your score" min='0' required><br>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict Concrete Strength" required />
+            </div>
+        </form>
+        <h2>
+            THE prediction is {{results}}
+        </h2>
+    </div>
+</body>
+</html>
